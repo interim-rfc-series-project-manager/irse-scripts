@@ -1,0 +1,10 @@
+#!/bin/bash
+
+: ${1?"Need list of messages"}
+
+for i
+do
+	sendmail -fjohn.levine@standcore.com -t < $i &&
+	echo $i &&
+	mv $i $(dirname $i)/sent-$(basename $i)
+done

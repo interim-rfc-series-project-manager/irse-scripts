@@ -1,0 +1,17 @@
+# make survey questions
+# where the RFCs are
+rfcdir /Users/xxx/rfc
+
+# datatracker pages for shepherds
+dturl https://datatracker.ietf.org/doc/rfc{rfc}/
+
+# survey url
+surveyurl https://ietf.iad1.qualtrics.com/jfe/form/SV_exkt1ViftEREwwC
+
+# template letter
+template template.msg
+
+## last survey sent out
+since 2022-08-01
+# filename for messges
+msgfile msg/202209-{0}

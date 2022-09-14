@@ -1,0 +1,6 @@
+#!/bin/sh
+# tweet message on stdin
+
+cd /home/johnl
+
+arse/rfcannounce.py -a -s | tee /tmp/rfctweet-$$ | bin/tweet -ar -w -s
